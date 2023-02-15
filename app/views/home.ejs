@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Lien Iconoir -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
+
+    <!-- Police Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <title>Messenger</title>
+</head>
+
+<body>
+    <section class="messenger">
+
+        <!-- HEADER -->
+        <div class="messenger__header">
+            <div class="messenger__header-left">
+                <img class="messenger__header-left-picture" src="images/interrogation.PNG" alt="Image du profil">
+                <div class="messenger__header-left-text">
+                    <h2 class="messenger__header-left-text-activity">Connecté en tant que</h2>
+                    <h1 class="messenger__header-left-text-pseudo">Connexion en cours...</h1>
+                </div>
+            </div>
+
+            <div class="messenger__header-right">
+                <i class="iconoir-phone"></i>
+                <i class="iconoir-video-camera"></i>
+                <div class="messenger__header-right-greenPoint"></div>
+                <i class="iconoir-info-empty"></i>
+            </div>
+        </div>
+
+        <!-- BOITE D'APPARITION DES MESSAGES -->
+        <div class="messenger__textBox"></div>
+
+        <!-- FOOTER -->
+        <div class="messenger__footer">
+            <div class="messenger__footer-plusBox">
+                <i class="iconoir-plus"></i>
+            </div>
+            <i class="iconoir-camera"></i>
+            <i class="iconoir-media-image"></i>
+            <i class="iconoir-mic"></i>
+            <form class="messenger__footer-form">
+                <input  class="messenger__footer-form-input" type="text" name="chat" id="chat" placeholder="Aa">
+                <i class="iconoir-emoji-satisfied"></i>
+            </form>
+            <i class="iconoir-thumbs-up"></i>
+        </div>
+    </section>
+
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="/js/socket.js"></script>
+</body>
+</html>
